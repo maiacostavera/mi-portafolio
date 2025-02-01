@@ -3,97 +3,83 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* Fuente global */
+/* Estilo del body */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
 }
 
-/* Estilo del header */
+/* Estilo del header con la foto y datos */
 header {
+    text-align: center;
     background-color: #333;
     color: white;
     padding: 20px;
-    text-align: center;
 }
 
-header h1 {
-    font-size: 2.5rem;
+.perfil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
     margin-bottom: 10px;
 }
 
-header p {
-    font-size: 1.2rem;
+.redes a {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 15px;
+    background-color: #0077b5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-/* Sección de proyectos */
+.redes a:hover {
+    background-color: #005582;
+}
+
+/* Secciones */
 section {
     padding: 20px;
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 800px;
+    margin: auto;
 }
 
 section h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #333;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
+.proyecto {
+    background: white;
+    padding: 15px;
     margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-ul li a {
+.proyecto a {
+    display: inline-block;
+    margin-top: 10px;
     text-decoration: none;
     color: #0066cc;
-    font-size: 1.1rem;
 }
 
-ul li a:hover {
+.proyecto a:hover {
     color: #004499;
 }
 
-/* Estilo del footer */
+/* Footer */
 footer {
     background-color: #333;
     color: white;
-    padding: 10px;
     text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 10px;
 }
 
-/* Agregar sombras y bordes sutiles */
-header, footer {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-section {
-    margin-bottom: 60px; /* Para que no se tape con el footer */
-}
-
-/* Responde bien en pantallas pequeñas */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    section h2 {
-        font-size: 1.5rem;
-    }
-
-    ul li a {
-        font-size: 1rem;
-    }
-}
 
